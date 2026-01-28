@@ -1244,7 +1244,8 @@ about us page
 */
 
 section.top-section .left-image img {
-  border-radius: 10px;
+  border-radius: 25px;
+  
 }
 
 section.top-section .accordions {
