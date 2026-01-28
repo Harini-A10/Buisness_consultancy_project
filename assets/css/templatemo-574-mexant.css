@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 574 Mexant
-
-https://templatemo.com/tm-574-mexant
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -267,11 +261,15 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  height:50px;
+  width:80px;
+  
 }
 
 .background-header .main-nav .logo {
   line-height: 80px;
   width: 160px;
+  
 }
 
 .background-header .nav {
@@ -1617,6 +1615,8 @@ section.map .info-item a:hover {
 #contact button.orange-button:hover {
   background-color: #ff511a;
 }
+
+
 
 
 /* 
