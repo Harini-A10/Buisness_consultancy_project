@@ -159,7 +159,7 @@ body {
 }
 
 .green-button a:hover {
-  opacity: 0.9;
+  background-color: #ff9933;
 }
 
 .orange-button a {
@@ -176,7 +176,7 @@ body {
 }
 
 .orange-button a:hover {
-  opacity: 0.9;
+  background-color: #ff9933;
 }
 
 section {
@@ -261,16 +261,12 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  height:50px;
-  width:80px;
+  height:25px;
+  width:50px;
   
 }
 
-.background-header .main-nav .logo {
-  line-height: 80px;
-  width: 160px;
-  
-}
+
 
 .background-header .nav {
   margin-top: 18px !important;
@@ -320,7 +316,7 @@ header
   background-color: #ff511a;
   padding: 10px 20px !important;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 200px;
   font-weight: 500;
   text-transform: capitalize;
   height: auto;
@@ -330,6 +326,7 @@ header
 }
 
 .header-area .main-nav .nav li:last-child a:hover {
+  background-color: #ff9933;
   color: #fff;
 }
 
@@ -1067,7 +1064,7 @@ section.calculator .section-heading h4 {
 }
 
 #calculate button.orange-button:hover {
-  opacity: 0.9;
+  background-color: #ff9933;
 }
 
 
@@ -1613,9 +1610,25 @@ section.map .info-item a:hover {
 }
 
 #contact button.orange-button:hover {
-  background-color: #ff511a;
+  background-color: #ff9933;
 }
 
+.map-toggle-btn{
+  font-size: 14px;
+  color: #fff;
+  background-color: #ff511a;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all .3s;
+}
+.map-toggle-btn:hover {
+  background-color: #ff9933;
+}
 
 
 

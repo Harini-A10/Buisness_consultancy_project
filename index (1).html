@@ -51,7 +51,7 @@ https://templatemo.com/tm-574-mexant
                           <li class="scroll-to-section"><a href="#about">About</a></li>
                          
                           <li class="scroll-to-section"><a href="#Contact_us">Contact Us</a></li>
-                          <li><a href="#Calculator">Contact Support</a></li> 
+                          <li><a href="#Calculator"><i class="fas fa-phone"></i></a></li> 
                       </ul>        
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -85,7 +85,7 @@ https://templatemo.com/tm-574-mexant
                       <a href="#">Discover More</a>
                     </div>
                     <div class="orange-button">
-                      <a href="#">Contact Us</a>
+                      <a href="#Contact_us">Contact Us</a>
                     </div>
                   </div>
                 </div>
@@ -212,7 +212,7 @@ https://templatemo.com/tm-574-mexant
               <a href="#">Discover More</a>
             </div>
             <div class="orange-button">
-              <a href="contact-us.html">Contact Us</a>
+              <a href="#Contact_us">Contact Us</a>
             </div>
           </div>
         </div>
@@ -357,7 +357,7 @@ https://templatemo.com/tm-574-mexant
                 Our vision is to simplify complexity, drive measurable success,
                and build lasting partnerships through agile development, innovation, and clarity.</p>
             <div class="green-button">
-              <a href="about-us.html">Discover More</a>
+              <a href="#">Discover More</a>
             </div>
           </div>
         </div>
@@ -436,7 +436,7 @@ https://templatemo.com/tm-574-mexant
       <div class="row">
         <div class="col-lg-12">
           <!-- Map Toggle Buttons -->
-          <div class="map-toggle-buttons">
+          <div class="map-toggle-buttons d-flex justify-content-center gap-3 mb-4 ">
             <button class="map-toggle-btn active" data-location="hyderabad">
               <i class="fa fa-map-marker"></i> Hyderabad
             </button>
@@ -510,32 +510,32 @@ https://templatemo.com/tm-574-mexant
       <div class="row">
         <div class="col-lg-2 col-sm-4 col-6">
           <div class="item">
-            <img src="assets/images/client-01.png" alt="">
+            <img src="assets/images/Copilot_20260128_002242.png" alt="">
           </div>
         </div>
         <div class="col-lg-2 col-sm-4 col-6">
           <div class="item">
-            <img src="assets/images/client-01.png" alt="">
+            <img src="assets/images/Copilot_20260128_002242.png" alt="">
           </div>
         </div>
         <div class="col-lg-2 col-sm-4 col-6">
           <div class="item">
-            <img src="assets/images/client-01.png" alt="">
+            <img src="assets/images/Copilot_20260128_002242.png" alt="">
           </div>
         </div>
         <div class="col-lg-2 col-sm-4 col-6">
           <div class="item">
-            <img src="assets/images/client-01.png" alt="">
+            <img src="assets/images/Copilot_20260128_002242.png" alt="">
           </div>
         </div>
         <div class="col-lg-2 col-sm-4 col-6">
           <div class="item">
-            <img src="assets/images/client-01.png" alt="">
+            <img src="assets/images/Copilot_20260128_002242.png" alt="">
           </div>
         </div>
         <div class="col-lg-2 col-sm-4 col-6">
           <div class="item">
-            <img src="assets/images/client-01.png" alt="">
+            <img src="assets/images/Copilot_20260128_002242.png" alt="">
           </div>
         </div>
       </div>
@@ -565,6 +565,35 @@ https://templatemo.com/tm-574-mexant
     <script src="assets/js/tabs.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+        // Map toggle functionality
+        document.querySelectorAll('.map-toggle-btn').forEach(button => {
+          button.addEventListener('click', function() {
+            const location = this.getAttribute('data-location');
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.map-toggle-btn').forEach(btn => {
+              btn.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Hide all maps
+            document.querySelectorAll('.map-container').forEach(map => {
+              map.classList.remove('active-map');
+              map.style.display = 'none';
+            });
+            
+            // Show selected map
+            const selectedMap = document.getElementById('map-' + location);
+            if (selectedMap) {
+              selectedMap.classList.add('active-map');
+              selectedMap.style.display = 'block';
+            }
+          });
+        });
+    </script>
     <script>
         var interleaveOffset = 0.5;
 
