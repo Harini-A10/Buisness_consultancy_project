@@ -1238,9 +1238,18 @@ about us page
 --------------------------------------------- 
 */
 
+section.top-section .left-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section.top-section .left-image img {
+  width: 100%;
+  max-width: 540px; /* keeps image from getting too large on wide screens */
+  height: auto;
   border-radius: 25px;
-  
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 section.top-section .accordions {
@@ -1274,6 +1283,7 @@ section.top-section .accordions {
 .accordion-head .icon {
   float: right;
   transition: transform 200ms ease-in-out;
+  cursor: pointer;
 }
 .accordion-head.is-open {
   color:#ff511a;
@@ -1778,3 +1788,4 @@ body {
     padding: 50px;
   }
 }
+
